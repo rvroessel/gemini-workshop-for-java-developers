@@ -21,8 +21,13 @@ dependencies {
     // Gemma via Ollama and TestContainers
     implementation 'dev.langchain4j:langchain4j-ollama:1.0.0-alpha1'
     implementation 'org.testcontainers:ollama:1.20.4'
-}
 
+    // PostgreSQL JDBC driver
+    implementation 'org.postgresql:postgresql:42.6.0'
+
+    // LangChain4j PostgreSQL with pgvector extension support
+    implementation 'dev.langchain4j:langchain4j-pgvector:0.27.1'
+}
 testing {
     suites {
         // Configure the built-in test suite
